@@ -1,6 +1,8 @@
 package net.julexar.testmod;
 
 import com.mojang.logging.LogUtils;
+import net.julexar.testmod.block.ModBlocks;
+import net.julexar.testmod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,7 +22,10 @@ public class TestMod {
     private static final Logger LOGGER = LogUtils.getLogger();
     public TestMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
+        // Register Items
+        ModItems.register(modEventBus);
+        // Register Blocks
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
