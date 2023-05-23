@@ -1,8 +1,10 @@
 package net.julexar.testmod.block;
 
 import net.julexar.testmod.TestMod;
+import net.julexar.testmod.block.custom.JumpyBlock;
 import net.julexar.testmod.item.ModCreativeModeTab;
 import net.julexar.testmod.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -26,6 +28,37 @@ public class ModBlocks {
                     .requiresCorrectToolForDrops()
             ),
             ModCreativeModeTab.BLOCK_TAB
+    );
+    public static final RegistryObject<Block> RAW_NAMEHERE_BLOCK = registerBlock("raw_namehere_block", () ->
+        new Block(BlockBehaviour.Properties
+                .of(Material.STONE)
+                .strength(6f)
+                .requiresCorrectToolForDrops()
+        ),
+        ModCreativeModeTab.BLOCK_TAB
+    );
+    public static final RegistryObject<Block> NAMEHERE_ORE = registerBlock("namehere_ore", () ->
+        new Block(BlockBehaviour.Properties
+                .of(Material.STONE)
+                .strength(6f)
+                .requiresCorrectToolForDrops()
+        ),
+        ModCreativeModeTab.BLOCK_TAB
+    );
+    public static final RegistryObject<Block> DEEPSLATE_NAMEHERE_ORE = registerBlock("deepslate_namehere_ore", () ->
+        new Block(BlockBehaviour.Properties
+                .of(Material.STONE)
+                .strength(6f)
+                .requiresCorrectToolForDrops()
+        ),
+        ModCreativeModeTab.BLOCK_TAB
+    );
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block", () ->
+        new JumpyBlock(BlockBehaviour.Properties
+                .of(Material.STONE)
+                .strength(6f)
+        ),
+        ModCreativeModeTab.BLOCK_TAB
     );
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

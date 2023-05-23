@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "testmod:namehere_block"
+    }
+  ],
+  "result": {
+    "item": "testmod:namehere",
+    "count": 9
+  }
+}

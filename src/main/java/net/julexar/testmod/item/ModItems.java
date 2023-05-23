@@ -1,6 +1,7 @@
 package net.julexar.testmod.item;
 
 import net.julexar.testmod.TestMod;
+import net.julexar.testmod.item.custom.EightBall;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,6 +15,16 @@ public class ModItems {
             new Item(
                     new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
             )
+    );
+    public static final RegistryObject<Item> RAW_NAMEHERE = ITEMS.register("raw_namehere", () ->
+        new Item(
+                new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
+        )
+    );
+    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball", () ->
+        new EightBall(
+                new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
+        )
     );
 
     public static void register(IEventBus eventBus) {

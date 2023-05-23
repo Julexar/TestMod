@@ -1,7 +1,12 @@
 {
   "item.testmod.namehere": "Namehere",
+  "item.testmod.raw_namehere": "Raw Namehere",
+  "item.testmod.eight_ball": "Eight Ball",
 
   "block.testmod.namehere_block": "Block of Namehere",
+  "block.testmod.raw_namehere_block": "Block of Raw Namehere",
+  "block.testmod.namehere_ore": "Namehere Ore",
+  "block.testmod.deepslate_namehere_ore": "Deepslate Namehere Ore",
 
   "itemGroup.testmod_items": "TestMod Items",
   "itemGroup.testmod_blocks": "TestMod Blocks"

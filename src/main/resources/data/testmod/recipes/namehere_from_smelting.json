@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "namehere",
+  "ingredient": {
+    "item": "testmod:raw_namehere"
+  },
+  "result": "testmod:namehere"
+}
