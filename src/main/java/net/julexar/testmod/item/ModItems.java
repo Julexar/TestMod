@@ -12,7 +12,7 @@ public class ModItems {
     // Create an Item (duplicate to create another)
     public static final RegistryObject<Item> NAMEHERE = ITEMS.register("namehere", () ->
             new Item(
-                    new Item.Properties().tab(ModCreativeModeTab.TESTMOD_TAB)
+                    new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
             )
     );
 

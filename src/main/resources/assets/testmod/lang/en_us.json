@@ -3,5 +3,6 @@
 
   "block.testmod.namehere_block": "Block of Namehere",
 
-  "itemGroup.testmodtab": "Test Mod"
+  "itemGroup.testmod_items": "TestMod Items",
+  "itemGroup.testmod_blocks": "TestMod Blocks"
 }

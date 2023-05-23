@@ -25,7 +25,7 @@ public class ModBlocks {
                     .strength(6f)
                     .requiresCorrectToolForDrops()
             ),
-            ModCreativeModeTab.TESTMOD_TAB
+            ModCreativeModeTab.BLOCK_TAB
     );
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

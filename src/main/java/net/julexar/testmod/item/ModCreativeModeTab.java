@@ -1,13 +1,20 @@
 package net.julexar.testmod.item;
 
+import net.julexar.testmod.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 
 public class ModCreativeModeTab {
-    public static final CreativeModeTab TESTMOD_TAB = new CreativeModeTab("testmodtab") {
+    public static final CreativeModeTab ITEM_TAB = new CreativeModeTab("testmod_items") {
         @Override
         public ItemStack makeIcon() {
             return new ItemStack(ModItems.NAMEHERE.get());
+        }
+    };
+    public static final CreativeModeTab BLOCK_TAB = new CreativeModeTab("testmod_blocks") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModBlocks.NAMEHERE_BLOCK.get());
         }
     };
 }
