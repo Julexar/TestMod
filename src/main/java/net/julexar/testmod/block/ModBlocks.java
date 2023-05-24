@@ -29,14 +29,6 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.BLOCK_TAB
     );
-    public static final RegistryObject<Block> RAW_ZIRCON_BLOCK = registerBlock("raw_zircon_block", () ->
-        new Block(BlockBehaviour.Properties
-                .of(Material.STONE)
-                .strength(6f)
-                .requiresCorrectToolForDrops()
-        ),
-        ModCreativeModeTab.BLOCK_TAB
-    );
     public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore", () ->
         new Block(BlockBehaviour.Properties
                 .of(Material.STONE)

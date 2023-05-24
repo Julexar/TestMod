@@ -1,9 +1,8 @@
 {
   "replace": false,
   "values": [
-    "testmod:namehere_ore",
-    "testmod:deepslate_namehere_ore",
-    "testmod:namehere_block",
-    "testmod:raw_namehere_block"
+    "testmod:zircon_ore",
+    "testmod:deepslate_zircon_ore",
+    "testmod:zircon_block"
   ]
 }
