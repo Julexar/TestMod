@@ -11,12 +11,12 @@ import net.minecraftforge.registries.RegistryObject;
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, TestMod.MOD_ID);
     // Create an Item (duplicate to create another)
-    public static final RegistryObject<Item> NAMEHERE = ITEMS.register("namehere", () ->
+    public static final RegistryObject<Item> ZIRCON = ITEMS.register("zircon", () ->
             new Item(
                     new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
             )
     );
-    public static final RegistryObject<Item> RAW_NAMEHERE = ITEMS.register("raw_namehere", () ->
+    public static final RegistryObject<Item> RAW_ZIRCON = ITEMS.register("raw_zircon", () ->
         new Item(
                 new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
         )

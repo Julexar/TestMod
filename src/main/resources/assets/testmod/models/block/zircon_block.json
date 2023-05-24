@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "testmod:block/namehere_block"
+    "all": "testmod:block/zircon_block"
   }
 }

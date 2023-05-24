@@ -8,13 +8,13 @@ public class ModCreativeModeTab {
     public static final CreativeModeTab ITEM_TAB = new CreativeModeTab("testmod_items") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModItems.NAMEHERE.get());
+            return new ItemStack(ModItems.ZIRCON.get());
         }
     };
     public static final CreativeModeTab BLOCK_TAB = new CreativeModeTab("testmod_blocks") {
         @Override
         public ItemStack makeIcon() {
-            return new ItemStack(ModBlocks.NAMEHERE_BLOCK.get());
+            return new ItemStack(ModBlocks.ZIRCON_BLOCK.get());
         }
     };
 }

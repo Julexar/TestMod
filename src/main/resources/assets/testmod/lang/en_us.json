@@ -1,12 +1,11 @@
 {
-  "item.testmod.namehere": "Namehere",
-  "item.testmod.raw_namehere": "Raw Namehere",
+  "item.testmod.zircon": "Zircon",
+  "item.testmod.raw_zircon": "Raw Zircon",
   "item.testmod.eight_ball": "Eight Ball",
 
-  "block.testmod.namehere_block": "Block of Namehere",
-  "block.testmod.raw_namehere_block": "Block of Raw Namehere",
-  "block.testmod.namehere_ore": "Namehere Ore",
-  "block.testmod.deepslate_namehere_ore": "Deepslate Namehere Ore",
+  "block.testmod.zircon_block": "Block of Namehere",
+  "block.testmod.zircon_ore": "Zircon Ore",
+  "block.testmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
 
   "itemGroup.testmod_items": "TestMod Items",
   "itemGroup.testmod_blocks": "TestMod Blocks"

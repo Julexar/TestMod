@@ -21,7 +21,7 @@ import java.util.function.Supplier;
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TestMod.MOD_ID);
     // Create a Block (duplicate for more)
-    public static final RegistryObject<Block> NAMEHERE_BLOCK = registerBlock("namehere_block", () ->
+    public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block", () ->
             new Block(BlockBehaviour.Properties
                     .of(Material.STONE)
                     .strength(6f)
@@ -29,7 +29,7 @@ public class ModBlocks {
             ),
             ModCreativeModeTab.BLOCK_TAB
     );
-    public static final RegistryObject<Block> RAW_NAMEHERE_BLOCK = registerBlock("raw_namehere_block", () ->
+    public static final RegistryObject<Block> RAW_ZIRCON_BLOCK = registerBlock("raw_zircon_block", () ->
         new Block(BlockBehaviour.Properties
                 .of(Material.STONE)
                 .strength(6f)
@@ -37,7 +37,7 @@ public class ModBlocks {
         ),
         ModCreativeModeTab.BLOCK_TAB
     );
-    public static final RegistryObject<Block> NAMEHERE_ORE = registerBlock("namehere_ore", () ->
+    public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore", () ->
         new Block(BlockBehaviour.Properties
                 .of(Material.STONE)
                 .strength(6f)
@@ -45,7 +45,7 @@ public class ModBlocks {
         ),
         ModCreativeModeTab.BLOCK_TAB
     );
-    public static final RegistryObject<Block> DEEPSLATE_NAMEHERE_ORE = registerBlock("deepslate_namehere_ore", () ->
+    public static final RegistryObject<Block> DEEPSLATE_ZIRCON_ORE = registerBlock("deepslate_zircon_ore", () ->
         new Block(BlockBehaviour.Properties
                 .of(Material.STONE)
                 .strength(6f)
