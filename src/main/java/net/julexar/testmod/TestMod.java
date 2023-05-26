@@ -3,6 +3,8 @@ package net.julexar.testmod;
 import com.mojang.logging.LogUtils;
 import net.julexar.testmod.block.ModBlocks;
 import net.julexar.testmod.item.ModItems;
+import net.julexar.testmod.world.feature.ModConfiguredFeatures;
+import net.julexar.testmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -28,6 +30,9 @@ public class TestMod {
         ModItems.register(modEventBus);
         // Register Blocks
         ModBlocks.register(modEventBus);
+        //Register Ore Generation
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

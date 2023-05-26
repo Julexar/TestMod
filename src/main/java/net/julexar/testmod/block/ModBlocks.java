@@ -48,6 +48,25 @@ public class ModBlocks {
         ),
         ModCreativeModeTab.BLOCK_TAB
     );
+
+    public static final RegistryObject<Block> ENDSTONE_ZIRCON_ORE = registerBlock("endstone_zircone_ore", () ->
+        new Block(BlockBehaviour.Properties
+                .of(Material.STONE)
+                .strength(6f)
+                .requiresCorrectToolForDrops()
+        ),
+        ModCreativeModeTab.BLOCK_TAB
+    );
+
+    public static final RegistryObject<Block> NETHER_ZIRCON_ORE = registerBlock("nether_zircon_ore", () ->
+        new Block(BlockBehaviour.Properties
+                .of(Material.STONE)
+                .strength(6f)
+                .requiresCorrectToolForDrops()
+        ),
+        ModCreativeModeTab.BLOCK_TAB
+    );
+
     public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block", () ->
         new JumpyBlock(BlockBehaviour.Properties
                 .of(Material.STONE)

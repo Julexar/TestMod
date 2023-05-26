@@ -2,6 +2,7 @@ package net.julexar.testmod.item;
 
 import net.julexar.testmod.TestMod;
 import net.julexar.testmod.block.ModBlocks;
+import net.julexar.testmod.block.custom.JumpyBlock;
 import net.julexar.testmod.item.custom.EightBall;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
@@ -25,6 +26,7 @@ public class ModItems {
                 new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
         )
     );
+
     public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball", () ->
         new EightBall(
                 new Item.Properties().tab(ModCreativeModeTab.ITEM_TAB)
