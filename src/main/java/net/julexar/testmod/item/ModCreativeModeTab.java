@@ -17,4 +17,11 @@ public class ModCreativeModeTab {
             return new ItemStack(ModBlocks.ZIRCON_BLOCK.get());
         }
     };
+
+    public static final CreativeModeTab CROP_TAB = new CreativeModeTab("testmod_crops") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.BLUEBERRRY_SEEDS.get());
+        }
+    };
 }

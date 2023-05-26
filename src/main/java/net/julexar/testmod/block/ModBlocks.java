@@ -1,6 +1,7 @@
 package net.julexar.testmod.block;
 
 import net.julexar.testmod.TestMod;
+import net.julexar.testmod.block.custom.BlueBerryCropBlock;
 import net.julexar.testmod.block.custom.JumpyBlock;
 import net.julexar.testmod.item.ModCreativeModeTab;
 import net.julexar.testmod.item.ModItems;
@@ -9,6 +10,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -51,6 +54,12 @@ public class ModBlocks {
                 .strength(6f)
         ),
         ModCreativeModeTab.BLOCK_TAB
+    );
+
+    public static final RegistryObject<Block> BLUEBERRY_CROP = BLOCKS.register("blueberry_crop", () ->
+        new BlueBerryCropBlock(BlockBehaviour.Properties
+                .copy(Blocks.WHEAT)
+        )
     );
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
