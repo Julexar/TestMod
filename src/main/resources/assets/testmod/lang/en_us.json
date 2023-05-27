@@ -15,5 +15,11 @@
   "itemGroup.testmod_items": "TestMod Items",
   "itemGroup.testmod_blocks": "TestMod Blocks",
 
-  "entity.minecraft.villager.jump_master": "Jump Master"
+  "entity.minecraft.villager.jump_master": "Jump Master",
+
+  "key.category.testmod": "Test Mod",
+  "key.testmod.drink_water": "Drink Water",
+
+  "message.testmod.drink_water": "Drinking Water",
+  "message.testmod.no_water": "No water nearby!"
 }

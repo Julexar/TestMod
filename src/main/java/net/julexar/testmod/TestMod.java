@@ -3,6 +3,7 @@ package net.julexar.testmod;
 import com.mojang.logging.LogUtils;
 import net.julexar.testmod.block.ModBlocks;
 import net.julexar.testmod.item.ModItems;
+import net.julexar.testmod.networking.ModMessages;
 import net.julexar.testmod.villager.ModVillagers;
 import net.julexar.testmod.world.feature.ModConfiguredFeatures;
 import net.julexar.testmod.world.feature.ModPlacedFeatures;
@@ -45,6 +46,7 @@ public class TestMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
+            ModMessages.register();
             ModVillagers.registerPOIs();
         });
     }
