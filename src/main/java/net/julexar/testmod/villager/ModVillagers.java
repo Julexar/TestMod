@@ -11,7 +11,6 @@ import net.minecraftforge.fml.util.ObfuscationReflectionHelper;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import org.spongepowered.tools.obfuscation.ObfuscationData;
 
 import java.lang.reflect.InvocationTargetException;
 
