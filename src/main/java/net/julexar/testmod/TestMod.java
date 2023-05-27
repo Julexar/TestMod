@@ -3,6 +3,7 @@ package net.julexar.testmod;
 import com.mojang.logging.LogUtils;
 import net.julexar.testmod.block.ModBlocks;
 import net.julexar.testmod.item.ModItems;
+import net.julexar.testmod.villager.ModVillagers;
 import net.julexar.testmod.world.feature.ModConfiguredFeatures;
 import net.julexar.testmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -30,7 +31,9 @@ public class TestMod {
         ModItems.register(modEventBus);
         // Register Blocks
         ModBlocks.register(modEventBus);
-        //Register Ore Generation
+        // Register Villagers
+        ModVillagers.register(modEventBus);
+        // Register Ore Generation
         ModConfiguredFeatures.register(modEventBus);
         ModPlacedFeatures.register(modEventBus);
         // Register the commonSetup method for modloading
@@ -41,7 +44,9 @@ public class TestMod {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
